@@ -16,7 +16,7 @@ AI Assistant:"""
 prompt = PromptTemplate(input_variables=["history", "input"], template=template)
 
 
-client = OpenAI(base_url="https://api.groq.com/openai/v1/chat/",api_key="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")
+client = OpenAI(base_url="https://api.groq.com/openai/v1/chat/")
 
 conversation = ConversationChain(
     prompt=prompt,
